@@ -1,4 +1,5 @@
-# 🔥Build a Stunning Fashion Studio Website with React JS [ Locomotive Scroll + GSAP + Framer Motion ]
+# 🔥Fashion Studio Website — React JS Experience
+## Smooth Scroll • Cinematic Animations • Modern UI
 
 ![GitHub stars](https://img.shields.io/github/stars/codebucks27/wibe-studio-starter-files?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
 ![GitHub forks](https://img.shields.io/github/forks/codebucks27/wibe-studio-starter-files?style=social&logo=KashFlow&&label=Forks)&nbsp;&nbsp;
@@ -10,9 +11,17 @@ This repository contains final code for Fashion Studio Website in ReactJS. <br /
 
 
 ### Images of The Fashion Studio Website:
+### Comming soon
+---
+## 👤 Author & Maintainer
 
+Designed and developed by
 
+Sainjal Kalnekar
 
+Frontend Developer focused on animation-driven interfaces and premium web experiences.
+
+This repository represents a personal customization and implementation of a modern fashion studio website built for learning, experimentation, and portfolio use. 
 ### Resources Used in This Project
 
 Fonts: https://fontsource.org/ <br />
