@@ -2,7 +2,9 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import { AnimatePresence } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+
+// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+
 import { ThemeProvider } from "styled-components";
 
 import Loader from "./components/Loader";
