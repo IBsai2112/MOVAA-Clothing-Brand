@@ -94,12 +94,12 @@ const Logo = () => {
             />
           </g>
         </svg> */}
-        <DotLottieReact
-  src="https://lottie.host/575ed603-9bcc-49e4-b4c9-1bf425f09940/MwIj8U3OXA.lottie"
-  loop
-  autoplay
+       <img
+  src="/tabLogo.ico"
+  alt="Sai Studio Logo"
   style={{ width: "48px", height: "48px" }}
 />
+
 
         <Text variants={textVariants} initial="hidden" animate="visible">
           Sai Studio
