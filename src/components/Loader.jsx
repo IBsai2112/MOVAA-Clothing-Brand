@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Container = styled(motion.div)`
   position: absolute;
@@ -20,7 +21,7 @@ overflow: hidden;
   justify-content: center;
   align-items: center;
 
-  background-color: black;
+  background-color: #242424;
 
   width: 100%;
 
@@ -39,7 +40,7 @@ overflow: hidden;
     stroke-linecap: round;
     g {
       path {
-        stroke: #fff;
+        stroke: #ffffff;
       }
     }
   }
@@ -96,25 +97,14 @@ const Loader = () => {
       transition={{ duration: 2 }}
     >
       {/* <img src={star} alt="Wibe Fashion" /> */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        enableBackground="new 0 0 24 24"
-        height="48px"
-        viewBox="0 0 24 24"
-        width="48px"
-        fill="none"
-      >
-        <g>
-          <motion.path
-            variants={pathVariants}
-            initial="hidden"
-            animate="visible"
-            d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
-          />
-        </g>
-      </svg>
+      <DotLottieReact
+  src="https://lottie.host/575ed603-9bcc-49e4-b4c9-1bf425f09940/MwIj8U3OXA.lottie"
+  loop
+  autoplay
+  style={{ width: "120px", height: "120px" }}
+/>
       <Text variants={textVariants} initial="hidden" animate="visible">
-        Wibe Studio
+        Sai Studio
       </Text>
     </Container>
   );

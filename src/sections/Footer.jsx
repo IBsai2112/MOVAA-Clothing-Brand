@@ -3,7 +3,7 @@ import React from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
-import Logo from "../assets/Svgs/star_white_48dp.svg";
+import Logo from "../assets/Svgs/tabLogo.ico";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -130,12 +130,12 @@ const Footer = () => {
           width="300"
           height="300"
           src={Logo}
-          alt="Wibe"
+          alt=""
           data-scroll
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Wibe Studio
+          Sai Studio
         </h3>
       </LogoContainer>
       <FooterComponent
@@ -176,7 +176,7 @@ const Footer = () => {
             data-scroll-speed="2"
             data-scroll-direction="horizontal"
           >
-            &copy; 2022. All Rights Reserved.
+            &copy; 2026. All Rights Reserved.
           </span>
           <span
             data-scroll
@@ -189,7 +189,7 @@ const Footer = () => {
               target={"_blank"}
               rel="dofollow noreferrer"
             >
-              CodeBucks
+              Sai Kalnekar
             </a>
           </span>
         </Bottom>
