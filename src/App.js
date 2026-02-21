@@ -33,7 +33,7 @@ function App() {
     <>
       <GlobalStyles />
       <ThemeProvider theme={dark}>
-        <LocomotiveScrollProvider
+        
           options={{
             smooth: true,
             // ... all available Locomotive Scroll instance options
@@ -52,7 +52,7 @@ function App() {
             ]
           }
           containerRef={containerRef}
-        >
+        
           <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
           <main className="App" data-scroll-container ref={containerRef}>
             <ScrollTriggerProxy />
@@ -67,7 +67,7 @@ function App() {
               <Footer key="Footer" />
             </AnimatePresence>
           </main>
-        </LocomotiveScrollProvider>
+      
       </ThemeProvider>
     </>
   );

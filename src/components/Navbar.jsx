@@ -96,7 +96,7 @@ const Item = styled(motion.li)`
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
-  const { scroll } = useLocomotiveScroll();
+  // const { scroll } = useLocomotiveScroll();
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);

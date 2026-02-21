@@ -111,7 +111,7 @@ const Bottom = styled.div`
 `;
 
 const Footer = () => {
-  const { scroll } = useLocomotiveScroll();
+  // const { scroll } = useLocomotiveScroll();
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
