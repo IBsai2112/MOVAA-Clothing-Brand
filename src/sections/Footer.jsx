@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
+// import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
 import Logo from "../assets/Svgs/tabLogo.ico";

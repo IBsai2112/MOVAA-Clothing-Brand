@@ -31,7 +31,6 @@ Fonts: https://fontsource.org/ <br />
 [styled-components](https://styled-components.com/docs/advanced) <br />
 [GSAP](https://greensock.com/gsap/) <br />
 [Framer-mMtion](https://www.framer.com/motion/) <br />
-[React-Locomotive-Scroll](https://www.npmjs.com/package/react-locomotive-scroll) <br />
 [Locomotive-Scroll](https://www.npmjs.com/package/locomotive-scroll) <br />
 
 ### All The Resources Used in This Website Are from👇:
