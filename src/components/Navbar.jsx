@@ -43,10 +43,6 @@ const MenuBtn = styled.li`
   font-size: ${(props) => props.theme.fontmd};
   font-weight: 600;
 
-  /* border-end-start-radius: 50%; */
-
-  /* border-end-end-radius: 50%; */
-
   cursor: pointer;
 
   display: flex;
@@ -58,7 +54,6 @@ const MenuBtn = styled.li`
   @media (max-width: 40em) {
     width: 10rem;
     height: 2rem;
-
   }
 `;
 
@@ -89,24 +84,28 @@ const Item = styled(motion.li)`
   @media (max-width: 40em) {
     flex-direction:column;
     padding:0.5rem 0;
-
   }
 `;
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
+  // BUG FIX: define scroll so code doesn't crash
+  let scroll = null;
+
   // const { scroll } = useLocomotiveScroll();
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
-    // console.log(elem);
     setClick(!click);
-    scroll.scrollTo(elem, {
-      offset: '-100',
-      duration: '2000',
-      easing: [0.25, 0.0, 0.35, 1.0],
-    });
+
+    if (scroll) {
+      scroll.scrollTo(elem, {
+        offset: '-100',
+        duration: '2000',
+        easing: [0.25, 0.0, 0.35, 1.0],
+      });
+    }
   };
 
   return (
@@ -114,7 +113,7 @@ const Navbar = () => {
       click={+click}
       initial={{ y: `-100%` }}
       animate={{ y: 0 }}
-      transition={{ duration: 2, delay: 5 /* 2 */ }}
+      transition={{ duration: 2, delay: 5 }}
     >
       <MenuItems
         drag="y"
@@ -125,14 +124,15 @@ const Navbar = () => {
         <MenuBtn onClick={() => setClick(!click)}>
           <span>MENU</span>
         </MenuBtn>
+
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
           onClick={() => handleScroll('#home')}
         >
-          {' '}
           <Link to="/">Home</Link>
         </Item>
+
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
@@ -140,6 +140,7 @@ const Navbar = () => {
         >
           <Link to="/">about</Link>
         </Item>
+
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
@@ -153,9 +154,9 @@ const Navbar = () => {
           whileTap={{ scale: 0.9, y: 0 }}
           onClick={() => handleScroll('.new-arrival')}
         >
-          {' '}
           <Link to="/">new arrival</Link>
         </Item>
+
       </MenuItems>
     </NavContainer>
   );
