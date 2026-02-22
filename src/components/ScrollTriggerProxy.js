@@ -1,12 +1,10 @@
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
-// import { useLocomotiveScroll } from 'react-locomotive-scroll';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 const ScrollTriggerProxy = () => {
-  // FIX: define scroll safely so code doesn't crash
-  const scroll = null;
-
+  const { scroll } = useLocomotiveScroll();
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -33,9 +31,7 @@ const ScrollTriggerProxy = () => {
     }
 
     return () => {
-      if (scroll) {
-        ScrollTrigger.addEventListener('refresh', () => scroll?.update());
-      }
+      ScrollTrigger.addEventListener('refresh', () => scroll?.update());
       ScrollTrigger.refresh();
     };
   }, [scroll]);

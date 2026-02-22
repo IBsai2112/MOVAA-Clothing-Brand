@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
-// import { useLocomotiveScroll } from "react-locomotive-scroll";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
-import Logo from "../assets/Svgs/tabLogo.ico";
+import Logo from "../assets/Svgs/star_white_48dp.svg";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -111,7 +111,7 @@ const Bottom = styled.div`
 `;
 
 const Footer = () => {
-  // const { scroll } = useLocomotiveScroll();
+  const { scroll } = useLocomotiveScroll();
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
@@ -130,12 +130,12 @@ const Footer = () => {
           width="300"
           height="300"
           src={Logo}
-          alt=""
+          alt="Wibe"
           data-scroll
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Sai Studio
+          MOVAA STUDIO
         </h3>
       </LogoContainer>
       <FooterComponent
@@ -189,7 +189,7 @@ const Footer = () => {
               target={"_blank"}
               rel="dofollow noreferrer"
             >
-              Sai Kalnekar
+              Sai
             </a>
           </span>
         </Bottom>

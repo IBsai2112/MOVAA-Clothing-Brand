@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Container = styled.div`
   position: absolute;
@@ -77,7 +76,7 @@ const Logo = () => {
     <Container>
       <Link to="/">
         {/* <img src={star} alt="Wibe Fashion" /> */}
-        {/* <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           enableBackground="new 0 0 24 24"
           height="48px"
@@ -93,16 +92,10 @@ const Logo = () => {
               d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"
             />
           </g>
-        </svg> */}
-       <img
-  src="/tabLogo.ico"
-  alt="Sai Studio Logo"
-  style={{ width: "48px", height: "48px" }}
-/>
-
+        </svg>
 
         <Text variants={textVariants} initial="hidden" animate="visible">
-          Sai Studio
+          Movaa Studio
         </Text>
       </Link>
     </Container>
